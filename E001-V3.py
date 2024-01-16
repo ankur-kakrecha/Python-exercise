@@ -92,11 +92,8 @@ Movement_list=[m1,m2,m3,m4,m5]
 error = " "
 Movement.movements_by_product(product_list)
 try:
-    m1.move()
-    m2.move()
-    m3.move()
-    m4.move()
-    m5.move()
+    for i in Movement_list:
+        i.move()
 except ValueError as e:
     error = e
 
